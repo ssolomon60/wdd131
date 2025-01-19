@@ -1,0 +1,47 @@
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #006EB6;
+  }
+  
+  i, ol {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  ul {
+    padding: 0 20px;
+  }
+  
+  footer img {
+    width: 150px;
+    margin-top: 20px;
+  }
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark h2 {
+    color: #82B4E5;
+}
