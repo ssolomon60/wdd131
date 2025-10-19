@@ -1,0 +1,157 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #473144;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Lora', serif;
+  margin-top: 0;
+}
+
+a {
+  color: #AF1B3F;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid #EFC69B;
+  background-color: #fdf8f3;
+}
+
+header h1 {
+  margin-bottom: 0.3rem;
+  color: #473144;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #8c1533;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #EFC69B;
+  padding-bottom: 1rem;
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+article h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.details {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.content p {
+  margin-top: 0.5rem;
+}
+
+.filters {
+  background-color: #f9f4ef;
+  border: 1px solid #EFC69B;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.filters p {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #fdf8f3;
+  border-top: 2px solid #EFC69B;
+  padding: 1rem;
+  color: #473144;
+  font-size: 0.9rem;
+}
+
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #AF1B3F;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s ease;
+}
+
+.skiptocontent a:focus {
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  article {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  header {
+    padding: 1rem 0.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
