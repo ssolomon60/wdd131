@@ -1,4 +1,4 @@
-/* General page styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,8 +6,8 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Header and navigation */
-header {
+header 
+{
   text-align: center;
   padding: 1rem;
 }
@@ -35,7 +35,7 @@ header {
   color: #473144;
 }
 
-/* Themes */
+
 body.light {
   background-color: #ffffff;
   color: #000000;
@@ -46,7 +46,7 @@ body.dark {
   color: #ffffff;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 1rem;
